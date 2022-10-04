@@ -14,7 +14,7 @@ while True:
         print('please put in a valid email address')
     else:
         index1 = user_email.rindex('@')
-        name = user_email[:index1]
-        domain = user_email[index1 + 1:]
+        name = user_email[:index1].title()
+        domain = user_email[index1 + 1:].title()
         print("Your Name: {0}\nYour Doamin: {1}".format(name, domain))
         break
